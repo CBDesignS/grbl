@@ -68,22 +68,19 @@
 #ifdef DEFAULTS_K40LASER
   // Description: K40 Laser Engraver GRBL Arduino Nano cnc board "MKS DLC v2 cnc controler board" Chinese clone not supported by MKS,
   // driven by two Pololu A4988 stepper drivers with a 12V, 5A power supply at 1.5A per winding.
-  #define MICROSTEPS 2
-  #define STEPS_PER_REV 200.0
-  #define MM_PER_REV (0.050*MM_PER_INCH) // 0.050 inch/rev leadscrew
   #define DEFAULT_X_STEPS_PER_MM 160.0
   #define DEFAULT_Y_STEPS_PER_MM 160.0
   #define DEFAULT_Z_STEPS_PER_MM 250.0
-  #define DEFAULT_X_MAX_RATE 5000.0 // mm/min (25 ipm)
+  #define DEFAULT_X_MAX_RATE 5000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 5000.0 // mm/min
   #define DEFAULT_Z_MAX_RATE 635.0 // mm/min
-  #define DEFAULT_X_ACCELERATION (250.0*60*60) // 50*60*60 mm/min^2 = 50 mm/sec^2
-  #define DEFAULT_Y_ACCELERATION (250.0*60*60) // 50*60*60 mm/min^2 = 50 mm/sec^2
+  #define DEFAULT_X_ACCELERATION (250.0*60*60) // 50*60*60 mm/min^2 = 250 mm/sec^2
+  #define DEFAULT_Y_ACCELERATION (250.0*60*60) // 50*60*60 mm/min^2 = 250 mm/sec^2
   #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 50*60*60 mm/min^2 = 50 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 320.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 218.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Z_MAX_TRAVEL 0.10 // mm NOTE: Must be a positive value.
-  #define DEFAULT_SPINDLE_RPM_MAX 2800.0 // rpm
+  #define DEFAULT_SPINDLE_RPM_MAX 255.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
   #define DEFAULT_STEPPING_INVERT_MASK 0
@@ -92,7 +89,7 @@
   #define DEFAULT_STATUS_REPORT_MASK 1 // MPos enabled
   #define DEFAULT_JUNCTION_DEVIATION 0.01 // mm
   #define DEFAULT_ARC_TOLERANCE 0.002 // mm
-  #define DEFAULT_REPORT_INCHES 0 // true
+  #define DEFAULT_REPORT_INCHES 0 // false
   #define DEFAULT_INVERT_ST_ENABLE 0 // false
   #define DEFAULT_INVERT_LIMIT_PINS 1 // true
   #define DEFAULT_SOFT_LIMIT_ENABLE 1 // true
