@@ -1,9 +1,8 @@
-<center> ![GitHub Logo](https://github.com/gnea/gnea-Media/blob/master/Grbl%20Logo/Grbl%20Logo%20250px.png?raw=true) </center>
-
+![GitHub Logo](https://github.com/gnea/gnea-Media/blob/master/Grbl%20Logo/Grbl%20Logo%20250px.png?raw=true)
 
 ## Started with the aim of getting 255 steps of P.W.M powered Laser engraving by using an Arduino Nano "MKS-DLC V2" cnc board or possibly other generic Arduino Nano cnc shield / boards instead of the supplied Chinese K40 Laser Engraver "6C6879-LASER-M2" clone board
 
-<center> ![mks_dlc_v2 controller](https://github.com/CBDesignS/grbl/blob/master/doc/mks_dlc_v2.png?raw=true) </center>
+![mks_dlc_v2 controller](https://github.com/CBDesignS/grbl/blob/master/doc/mks_dlc_v2.png?raw=true)
 
 ```
 A few changes need to be made within the config.h to reflect the strange setup that some of the 
