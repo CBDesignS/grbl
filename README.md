@@ -2,6 +2,7 @@
 
 Started with the aim of getting a cleaner build with the non relevant functions removed from the code and compiled to a smaller memory size running on a Arduino Nano "MKS-DLC V2" cnc board or possibly the generic Arduino Nano cnc shield / boards instead of the supplied Chinese K40 Laser Engraver "6C6879-LASER-M2" clone board
 
+![mks_dlc_v2 controller](https://github.com/CBDesignS/grbl/doc/mks_dlc_v2.png?raw=true)
 
 ```
 A few changes need to be made within the config.h to reflect the strange setup that some of the K40 chinese Laser seems to use.
